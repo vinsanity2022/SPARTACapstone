@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-10T13:41:58.743Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60" etag="ufN_Qu3sqDkncO7WFlUX" version="22.0.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-10-10T15:04:30.248Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60" etag="ED7DhqMIvPFHakco05ic" version="22.0.4" type="github" pages="3">
   <diagram name="Data Architecture" id="ctzMrAQ5W3zzFSxHdsyH">
     <mxGraphModel dx="1666" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
@@ -245,7 +245,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="BQQpvgiXreFLzf3pVBU5" name="ERD">
-    <mxGraphModel dx="1587" dy="755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="828" dy="921" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -302,24 +302,24 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="OkkWYfvUJ_7oVDpKxBSs-13" value="INCOME" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="460" y="536.5" width="100" height="40" as="geometry" />
+          <mxGeometry x="460" y="760.25" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="OkkWYfvUJ_7oVDpKxBSs-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OkkWYfvUJ_7oVDpKxBSs-15" target="OkkWYfvUJ_7oVDpKxBSs-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OkkWYfvUJ_7oVDpKxBSs-15" value="Income Gap (%)" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="420" y="400" width="100" height="52.5" as="geometry" />
+          <mxGeometry x="420" y="623.75" width="100" height="52.5" as="geometry" />
         </mxCell>
-        <mxCell id="OkkWYfvUJ_7oVDpKxBSs-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OkkWYfvUJ_7oVDpKxBSs-17" target="OkkWYfvUJ_7oVDpKxBSs-13">
+        <mxCell id="FRXkMHk-6Ydm-0PyETVP-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OkkWYfvUJ_7oVDpKxBSs-17" target="OkkWYfvUJ_7oVDpKxBSs-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OkkWYfvUJ_7oVDpKxBSs-17" value="IncID" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
-          <mxGeometry x="370" y="460" width="100" height="55" as="geometry" />
+          <mxGeometry x="360" y="678.75" width="100" height="55" as="geometry" />
         </mxCell>
         <mxCell id="OkkWYfvUJ_7oVDpKxBSs-18" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hzcTF9_PanDwGjhAesQ--1" target="OkkWYfvUJ_7oVDpKxBSs-13">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="410" y="412" as="sourcePoint" />
-            <mxPoint x="750" y="330" as="targetPoint" />
+            <mxPoint x="200" y="570" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OkkWYfvUJ_7oVDpKxBSs-21" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OkkWYfvUJ_7oVDpKxBSs-18">
@@ -373,7 +373,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eizdyry3xsJaZ6XRWs63-1" value="Annual Per Capita Poverty Threshold (in PhP)" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="590" y="452.5" width="120" height="60" as="geometry" />
+          <mxGeometry x="590" y="676.25" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="eizdyry3xsJaZ6XRWs63-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eizdyry3xsJaZ6XRWs63-2" target="hzcTF9_PanDwGjhAesQ--1">
           <mxGeometry relative="1" as="geometry" />
@@ -385,7 +385,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vF5GAdszkI4fa8UxFi55-1" value="Annual Per Capita Food Threshold&amp;nbsp; (in PhP)" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="530" y="386.25" width="120" height="60" as="geometry" />
+          <mxGeometry x="530" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FRXkMHk-6Ydm-0PyETVP-3" value="EMPLOYMENT" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="670" y="440" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
