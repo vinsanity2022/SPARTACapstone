@@ -1,15 +1,9 @@
-<mxfile host="app.diagrams.net" modified="2023-10-17T03:08:07.152Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46" etag="2Gd3GwItIn0ZexqE-DOC" version="22.0.4" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-10-17T03:28:54.499Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46" etag="Qabw4DeYOIb_Xt4BTUc1" version="22.0.4" type="github" pages="4">
   <diagram name="Data Architecture" id="ctzMrAQ5W3zzFSxHdsyH">
     <mxGraphModel dx="1678" dy="928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="yTCXlyMsRBydCghcJ3Hg-2" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;PHASE II&lt;/font&gt;" style="whiteSpace=wrap;html=1;align=center;verticalAlign=top;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="720" y="6.61" width="660" height="593.39" as="geometry" />
-        </mxCell>
-        <mxCell id="yTCXlyMsRBydCghcJ3Hg-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;PHASE I&lt;/font&gt;" style="whiteSpace=wrap;html=1;align=center;verticalAlign=top;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="12.57" y="6.61" width="707.43" height="593.39" as="geometry" />
-        </mxCell>
         <mxCell id="oZp67QmK9EEdHLJoPUvL-60" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1190" y="670" width="200" height="120" as="geometry" />
         </mxCell>
