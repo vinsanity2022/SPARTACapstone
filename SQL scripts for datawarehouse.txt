@@ -1,0 +1,60 @@
+-- Create the Year dimension table
+CREATE TABLE IF NOT EXISTS year_dim (
+    YearID serial PRIMARY KEY,
+    Year INT,
+    UNIQUE (Year)
+);
+
+-- Create the Region dimension table
+CREATE TABLE IF NOT EXISTS region_dim (
+    RegID serial PRIMARY KEY,
+    RegionName TEXT,
+    UNIQUE (RegID)
+);
+
+-- Create the Poverty dimension table
+CREATE TABLE IF NOT EXISTS poverty_dim (
+    PovID serial PRIMARY KEY,
+    PovertyIncidenceAmongPopulationPrcnt INT,
+    PovertyGapPrcnt DECIMAL(5, 2),
+    SeverityOfPovertyPrcnt DECIMAL(5, 2),
+    UNIQUE (PovID)
+);
+
+-- Create the Income dimension table
+CREATE TABLE IF NOT EXISTS income_dim (
+    IncmID serial PRIMARY KEY,
+    IncomeGapPrcnt DECIMAL(10, 2),
+    AnnualPerCapitaFoodThresholdPhp INT,
+    AnnualPerCapitaPovertyThresholdPhp INT,
+    UNIQUE (IncmID)
+);
+
+-- Create the Employment dimension table
+CREATE TABLE IF NOT EXISTS employment_dim (
+    EmpID serial PRIMARY KEY,
+    LaborForceParticipationRate DECIMAL(10, 6),
+    EmploymentRate DECIMAL(10, 6),
+    UnemploymentRate DECIMAL(10, 6),
+    UnderemploymentRate DECIMAL(10, 6),
+    UNIQUE (EmpID)
+);
+
+-- Create the Population dimension table
+CREATE TABLE IF NOT EXISTS population_dim (
+    PopID serial PRIMARY KEY,
+    PopNumber INT,
+    UNIQUE (PopID)
+);
+
+-- Create the Fact table
+CREATE TABLE IF NOT EXISTS socioeconomic_fact (
+    SocEcoID serial PRIMARY KEY,
+    YearID INT REFERENCES year_dim (YearID),
+    RegID INT REFERENCES region_dim (RegID),
+    PovID INT REFERENCES poverty_dim (PovID),
+    IncmID INT REFERENCES income_dim (IncmID),
+    EmpID INT REFERENCES employment_dim (EmpID),
+    PopID INT REFERENCES population_dim (PopID),
+    UNIQUE (SocEcoID, PovID, IncmID, EmpID, PopID) -- Optional, for data integrity
+);

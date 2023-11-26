@@ -1,0 +1,46 @@
+-- Create year table
+CREATE TABLE IF NOT EXISTS year (
+    YearID INT PRIMARY KEY,
+    Year INT,
+    UNIQUE (YearID) 
+);
+-- Create region table.
+CREATE TABLE IF NOT EXISTS region (
+    RegID serial PRIMARY KEY,
+    RegionName text,
+    UNIQUE (RegID)
+);
+-- Create poverty table.
+CREATE TABLE IF NOT EXISTS poverty (
+    PovID serial PRIMARY KEY,
+    PovertyIncidenceamongPopulationPrcnt int,
+    PovertyGapPrcnt decimal(5, 2),
+    SeverityofPovertyPrcnt decimal(5, 2),
+    RegID int REFERENCES region(RegID),
+    YearID int REFERENCES year(YearID)
+);
+-- Create income table.
+CREATE TABLE IF NOT EXISTS income (
+    IncmID serial PRIMARY KEY,
+    IncomeGapPrcnt decimal(10, 2),
+    AnnualPerCapitaFoodThresholdPhp int,
+    AnnualPerCapitaPovertyThresholdPhp int,
+    PovID int REFERENCES poverty(PovID)
+);
+-- Create employment table.
+CREATE TABLE IF NOT EXISTS employment (
+    EmpID serial PRIMARY KEY,
+    LaborForceParticipationRate decimal(10, 6),
+    EmploymentRate decimal(10, 6),
+    UnemploymentRate decimal(10, 6),
+    UnderemploymentRate decimal(10, 6),
+    RegID int REFERENCES region(RegID),
+    YearID int REFERENCES year(YearID)
+);
+-- Create population table.
+CREATE TABLE IF NOT EXISTS population (
+    PopID serial PRIMARY KEY,
+    PopNumber int,
+    RegID int REFERENCES region(RegID),
+    YearID int REFERENCES year(YearID)
+);
